@@ -1,0 +1,558 @@
+html{
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+#navbar{
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(5px);    
+position:sticky;
+top:0;
+width:100%;
+z-index:1000;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+color:#2e7d5b;
+letter-spacing:1px;
+}
+.logo img{
+height:40px;
+width:auto;
+display:block;
+}
+
+.nav-links{
+font-family: cursive;
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:color 0.3s;
+}
+
+.nav-links a:hover{
+color:#2e7d5b;
+}
+
+.nav-actions button{
+background:#2e7d5b;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:20px;
+cursor:pointer;
+font-size:14px;
+}
+
+.nav-actions button:hover{
+background:#1f5c43;
+}
+
+/* HERO SECTION */
+
+#hero{
+position:relative;
+height:90vh;
+overflow:hidden;
+height:90vh;
+background:url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-background{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url('c:\Users\DTP\Downloads\dinner-party.jpg') center/cover no-repeat;
+filter:blur(2px);
+transform:scale(1.1);
+z-index:1;
+}
+
+.hero-background::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+}
+
+.hero-overlay{
+position: relative;
+z-index: 2;
+background:rgba(0,0,0,0.45);
+padding:40px;
+}
+
+.brand-title{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing:3px;
+font-size:60px;
+}
+
+.main-title{
+font-family: Arial, Helvetica, sans-serif;
+font: size 20px;
+margin:10px 0;
+}
+
+.tagline{
+font-family: Arial, Helvetica, sans-serif;
+font-size:18px;
+}
+
+/* ABOUT SECTION */
+
+#about{
+background:#2e7d5b;
+color:white;
+padding:60px 10%;
+}
+
+.about-container{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about-image img{
+width:300px;
+border-radius:10px;
+}
+
+.about-text{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width:600px;
+line-height:1.7;
+}
+
+/* HOW IT WORKS SECTION */
+
+#how-it-works{
+background:url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
+padding:80px 10%;
+color:rgb(2, 6, 40);
+text-align:center;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+gap:50px;
+margin-top:40px;
+}
+
+.step-card{
+background:rgba(116, 230, 185, 0.5);
+padding:20px;
+border-radius:8px;
+width:220px;
+}
+
+/* PRICING SECTION */
+
+#pricing{
+background:#8bc34a;
+padding:60px 10%;
+text-align:center;
+}
+
+.product-grid{
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.product-card{
+background:white;
+border-radius:10px;
+padding:15px;
+width:230px;
+}
+
+.product-card img{
+width:100%;
+border-radius:8px;
+}
+
+/* BOX CONTENTS SECTION */
+
+#box-contents{
+padding:70px 10%;
+background:#f2f2f2;
+}
+
+.box-container{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.box-text ul{
+margin-top:10px;
+}
+
+#browse-kits-btn{
+background:#2e7d5b;
+color:white;
+padding:10px 25px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+/* REVIEWS SECTION */
+
+    #reviews{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#1f6f46;
+    color:white;
+    padding:60px 10%;
+    text-align: center;
+    }
+    
+    .review-list{
+    justify-content: center;
+    display:flex;
+    gap:40px;
+    }
+
+    .review-card{
+    background:#2e7d5b;
+    padding:20px;
+    border-radius:10px;
+    width:280px;
+    line-height:1.6;
+    }
+    /* REVIEW USER (IMAGE + NAME) */
+
+    .review-user{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+    }
+
+    /* PROFILE IMAGE */
+
+    .review-user img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #ffffff;
+    }
+
+    /* NAME */
+
+    .review-user h4{
+    margin:0;
+    font-size:16px;
+    color:white;
+    }
+
+    /* HORIZONTAL SCROLL BASE */
+
+    .horizontal-scroll{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding:20px 10px;
+    }
+
+    /* IMPORTANT: card width */
+
+    .review-card{
+    min-width:280px;
+    flex-shrink:0;
+    }
+
+
+/* MEAL KIT CATEGORIES */
+
+#meal-kits{
+background:#8bc34a;
+padding:70px 10%;
+text-align:center;
+}
+
+#meal-kits h2{
+font-size:32px;
+margin-bottom:40px;
+letter-spacing:2px;
+color:#ffffff;
+}
+
+.kit-grid{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.kit-card{
+min-width: 260px;
+flex-shrink: 0;
+background:#ffffff;
+border-radius:12px;
+width:260px;
+padding:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+transition:transform 0.3s;
+}
+
+.kit-card:hover{
+transform:translateY(-6px);
+}
+
+.kit-card img{
+width:100%;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.kit-card h3{
+font-size:20px;
+margin-bottom:10px;
+color:#333;
+}
+
+.kit-card button{
+background:#2e7d5b;
+color:#fff;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+cursor:pointer;
+font-size:14px;
+transition:background 0.3s;
+}
+
+.kit-card button:hover{
+background:#1f5c43;
+}
+
+/* CONTACT / FOOTER */
+
+#contact{
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
+color:white;
+padding:80px 10%;
+text-align:center;
+padding:70px 10%;
+text-align:center;
+}
+
+#contact h2{
+font-family: Arial, Helvetica, sans-serif;
+font-size:30px;
+margin-bottom:20px;
+letter-spacing:2px;
+}
+
+#contact-email{
+font-family: Arial, Helvetica, sans-serif;
+font-size:18px;
+margin-bottom:30px;
+font-weight:bold;
+}
+
+.socials{
+font-family: cursive;
+margin-bottom:30px;
+}
+
+.socials a{
+color:#ffffff;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
+transition:color 0.3s;
+}
+
+.socials a:hover{
+color:#c8e6c9;
+}
+
+.locations{
+font-family: cursive;
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+font-size:14px;
+line-height:1.6;
+}
+
+.locations p{
+max-width:220px;
+}
+
+#products{
+padding:80px 10%;
+background:#f5f5f5;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+font-size:32px;
+}
+
+/* SEARCH BAR */
+
+.product-search{
+display:flex;
+justify-content:center;
+margin-bottom:30px;
+}
+
+#product-search-input{
+width:350px;
+padding:12px 15px;
+border-radius:25px;
+border:1px solid #ccc;
+font-size:16px;
+outline:none;
+}
+
+/* SLIDER CONTAINER */
+
+.product-slider-container{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+/* FLEX SCROLL */
+
+.product-slider{
+display:flex;
+gap:25px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:20px 10px;
+}
+
+/* Hide scrollbar (optional) */
+
+.product-slider::-webkit-scrollbar{
+height:8px;
+}
+
+.product-slider::-webkit-scrollbar-thumb{
+background:#ccc;
+border-radius:5px;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+min-width:230px;
+flex-shrink: 0;
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+transition:transform 0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
+}
+
+.product-card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.price{
+font-weight:bold;
+margin:10px 0;
+color:#2e7d5b;
+}
+
+/* ORDER BUTTON */
+
+.order-btn{
+background:#2e7d5b;
+color:white;
+padding:10px 18px;
+border-radius:20px;
+text-decoration:none;
+font-size:14px;
+display:inline-block;
+}
+
+.order-btn:hover{
+background:#1f5c43;
+}
+
+/* SCROLL BUTTONS */
+
+.scroll-wrapper{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+.scroll-btn{
+position:absolute;
+top:40%;
+transform:translateY(-50%);
+background:#2e7d5b;
+color:white;
+border:none;
+font-size:22px;
+width:40px;
+height:40px;
+border-radius:50%;
+cursor:pointer;
+z-index:10;
+}
+
+.left-btn{
+left:-15px;
+}
+
+.right-btn{
+right:-15px;
+}
+
+.horizontal-scroll::-webkit-scrollbar{
+display:none;
+}
