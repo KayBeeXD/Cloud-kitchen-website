@@ -74,10 +74,10 @@ background:#0e2118;
 color:white;
 }
 
-/* .dark-mode section{
+.dark-mode section{
 background:#0e2118;
-color:white;
-} */
+color:rgb(48, 46, 46);
+}
 
 /* HERO SECTION */
 
@@ -86,7 +86,7 @@ position:relative;
 height:90vh;
 overflow:hidden;
 height:90vh;
-background:url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
+background:url('images\image1.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -100,7 +100,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:url('c:\Users\DTP\Downloads\dinner-party.jpg') center/cover no-repeat;
+background:url('images\dinner-party.jpg') center/cover no-repeat;
 filter:blur(2px);
 transform:scale(1.1);
 z-index:1;
@@ -168,7 +168,7 @@ line-height:1.7;
 /* HOW IT WORKS SECTION */
 
 #how-it-works{
-background:url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
+background:url('images\image1.jpg') center/cover no-repeat;
 padding:80px 10%;
 color:rgb(2, 6, 40);
 text-align:center;
@@ -323,11 +323,19 @@ letter-spacing:2px;
 color:#ffffff;
 }
 
-.kit-grid{
+/* .kit-grid{
 display:flex;
 justify-content:center;
 gap:40px;
 flex-wrap:wrap;
+} */
+.kit-grid{
+display:flex;
+flex-wrap:nowrap;              /* 🚨 IMPORTANT: prevents new line */
+gap:30px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:20px 10px;
 }
 
 .kit-card{

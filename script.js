@@ -32,7 +32,7 @@ button.addEventListener("click", function(){
 const targetId = this.getAttribute("data-target");
 const container = document.getElementById(targetId);
 
-const scrollAmount = 300;
+const scrollAmount = 500;
 
 if(this.classList.contains("left-btn")){
 container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
