@@ -380,6 +380,68 @@ transition:background 0.3s;
 background:#1f5c43;
 }
 
+.features-list li{
+margin-bottom:10px;
+list-style:none;
+font-size:16px;
+}
+
+#browse-kits-btn{
+background:#2e7d5b;
+color:white;
+padding:12px 28px;
+border:none;
+border-radius:30px;
+font-size:15px;
+cursor:pointer;
+margin-top:20px;
+transition:all 0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+#browse-kits-btn:hover{
+background:#1f5c43;
+transform:translateY(-2px);
+}
+
+#box-contents{
+background:linear-gradient(135deg, #f5f7f6, #e8f5e9);
+padding:80px 10%;
+}
+
+.box-container{
+display:flex;
+gap:40px;
+align-items:center;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.box-image img{
+width:100%;
+max-width:600px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+.box-image img:hover{
+transform:scale(1.03);
+}
+
+.box-text h2{
+font-size:32px;
+margin-bottom:20px;
+color:#2e7d5b;
+}
+
+.box-text ul{
+padding-left:20px;
+line-height:1.8;
+font-size:16px;
+}
 /* CONTACT / FOOTER */
 
 #contact{
