@@ -69,6 +69,16 @@ font-size:14px;
 background:#1f5c43;
 }
 
+.dark-mode{
+background:#0e2118;
+color:white;
+}
+
+/* .dark-mode section{
+background:#0e2118;
+color:white;
+} */
+
 /* HERO SECTION */
 
 #hero{
@@ -365,47 +375,55 @@ background:#1f5c43;
 /* CONTACT / FOOTER */
 
 #contact{
-background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('c:\Users\DTP\Downloads\image1.jpg') center/cover no-repeat;
-color:white;
-padding:80px 10%;
-text-align:center;
-padding:70px 10%;
-text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    color:white;
+    padding:80px 10%;
+    text-align:center;
+    padding:70px 10%;
+    text-align:center;
 }
 
 #contact h2{
-font-family: Arial, Helvetica, sans-serif;
-font-size:30px;
-margin-bottom:20px;
-letter-spacing:2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    margin-bottom:20px;
+    letter-spacing:2px;
 }
 
-#contact-email{
-font-family: Arial, Helvetica, sans-serif;
-font-size:18px;
-margin-bottom:30px;
-font-weight:bold;
-}
 
 .socials{
-font-family: cursive;
-margin-bottom:30px;
+    font-family: cursive;
+    margin-bottom:30px;
 }
 
 .socials a{
-color:#ffffff;
-margin:0 15px;
-text-decoration:none;
-font-weight:500;
+    color:#ffffff;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:500;
 transition:color 0.3s;
 }
 
 .socials a:hover{
-color:#c8e6c9;
+    color:#c8e6c9;
+}
+.call-button{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#27ae60;
+    color:white;
+    font-size:22px;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
 }
 
+.floating-call:hover{
+background:#1e8449;
+}
 .locations{
 font-family: cursive;
 display:flex;
