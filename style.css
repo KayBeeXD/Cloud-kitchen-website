@@ -32,6 +32,7 @@ color:#2e7d5b;
 letter-spacing:1px;
 }
 .logo img{
+border-radius: 30px;
 height:40px;
 width:auto;
 display:block;
